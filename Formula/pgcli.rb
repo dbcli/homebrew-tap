@@ -5,6 +5,7 @@ class Pgcli < Formula
   homepage "https://pgcli.com/"
   url "https://files.pythonhosted.org/packages/44/c7/a3a1df56b7eefdbf2aaf833d2856262f075ece87530d98936d4147d3e32e/pgcli-1.5.1.tar.gz"
   sha256 "10d7334a9a90c8eec107dca89f8bde0a5dbfa10bfc5f187402c3f1adffee36d7"
+  head "https://github.com/dbcli/pgcli.git", :shallow => false
 
   depends_on :python
   depends_on "openssl"
