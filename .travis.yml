@@ -12,9 +12,9 @@ install:
   - mkdir -p $(brew --repo)/Library/Taps/dbcli
   - ln -s $TRAVIS_BUILD_DIR $(brew --repo)/Library/Taps/dbcli/homebrew-tap
 script:
-  - brew install pgcli $FORMULA_VERSION --verbose
-  - brew audit pgcli --strict
-  - brew test pgcli
+  - brew install dbcli/tap/pgcli $FORMULA_VERSION --verbose
+  - brew audit dbcli/tap/pgcli --strict
+  - brew test dbcli/tap/pgcli
   - pgcli --help
 matrix:
   fast_finish: true
