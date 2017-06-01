@@ -8,7 +8,9 @@ class Pgcli < Formula
 
   depends_on :python
   depends_on "openssl"
-  depends_on :postgresql
+
+  # Do not upgrade the postgresql Formula if it's installed.
+  depends_on :postgresql unless Formula["postgresql"].installed?
 
   resource "click" do
     url "https://files.pythonhosted.org/packages/95/d9/c3336b6b5711c3ab9d1d3a80f1a3e2afeb9d8c02a7166462f6cc96570897/click-6.7.tar.gz"
@@ -66,6 +68,9 @@ class Pgcli < Formula
   end
 
   def install
+    # Append Homebrew's bin directory to the PATH so Psycopg can find the pg_config binary.
+    ENV.append_path "PATH", "#{HOMEBREW_PREFIX}/bin"
+
     virtualenv_install_with_resources
   end
 
