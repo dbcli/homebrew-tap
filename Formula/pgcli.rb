@@ -1,10 +1,12 @@
 class Pgcli < Formula
+  include Language::Python::Virtualenv
+
   desc "CLI for Postgres with auto-completion and syntax highlighting"
   homepage "https://pgcli.com/"
   url "https://files.pythonhosted.org/packages/44/c7/a3a1df56b7eefdbf2aaf833d2856262f075ece87530d98936d4147d3e32e/pgcli-1.5.1.tar.gz"
   sha256 "10d7334a9a90c8eec107dca89f8bde0a5dbfa10bfc5f187402c3f1adffee36d7"
 
-  depends_on :python if MacOS.version <= :snow_leopard
+  depends_on :python
   depends_on "openssl"
   depends_on :postgresql
 
@@ -64,18 +66,7 @@ class Pgcli < Formula
   end
 
   def install
-    ENV.prepend_create_path "PYTHONPATH", libexec/"vendor/lib/python2.7/site-packages"
-    resources.each do |r|
-      r.stage do
-        system "python", *Language::Python.setup_install_args(libexec/"vendor")
-      end
-    end
-
-    ENV.prepend_create_path "PYTHONPATH", libexec/"lib/python2.7/site-packages"
-    system "python", *Language::Python.setup_install_args(libexec)
-
-    bin.install Dir["#{libexec}/bin/*"]
-    bin.env_script_all_files(libexec/"bin", :PYTHONPATH => ENV["PYTHONPATH"])
+    virtualenv_install_with_resources
   end
 
   test do
