@@ -2,7 +2,6 @@ language: objective-c
 env:
   matrix:
     - FORMULA_VERSION=
-    - FORMULA_VERSION=--HEAD
 rvm: system
 before_install:
   - brew update
