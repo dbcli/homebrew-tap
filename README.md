@@ -1,5 +1,7 @@
 # dbcli Homebrew tap
 
+[![Build Status](https://travis-ci.org/dbcli/homebrew-tap.svg?branch=master)](https://travis-ci.org/dbcli/homebrew-tap)
+
 dbcli macOS formulae for the Homebrew package manager
 
 ## Installation

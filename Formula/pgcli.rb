@@ -43,8 +43,8 @@ class Pgcli < Formula
   end
 
   resource "pgspecial" do
-    url "https://files.pythonhosted.org/packages/71/cc/93ee525a00e5ad6306945529d6f9c7ea0058d2f7a72ad25759c21e558780/pgspecial-1.7.0.tar.gz"
-    sha256 "297e231caf77e129c4d0b71f97ca022be8d32684928af5959050de727245db4a"
+    url "https://files.pythonhosted.org/packages/bd/61/b35b4622813d6659653290bf6c001b22dc0c5d0b88c0948db47d15d1c42d/pgspecial-1.8.0.tar.gz"
+    sha256 "89f524909e97554bb3eeceb186a834e86cb71e34afef3a95fe645049ead894b7"
   end
 
   resource "prompt_toolkit" do
