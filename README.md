@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/dbcli/homebrew-tap.svg?branch=master)](https://travis-ci.org/dbcli/homebrew-tap)
 
-dbcli macOS formulae for the Homebrew package manager
+dbcli macOS formulas for the Homebrew package manager
 
 ## CLIs that are in homebrew/core
 
