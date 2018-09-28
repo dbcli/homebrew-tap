@@ -1,0 +1,17 @@
+language: objective-c
+rvm: system
+before_install:
+  - brew update
+  - brew --env
+  - brew config
+install:
+  - mkdir -p $(brew --repo)/Library/Taps/dbcli
+  - ln -s $TRAVIS_BUILD_DIR $(brew --repo)/Library/Taps/dbcli/homebrew-tap
+  - brew tap --repair
+script:
+  - brew install dbcli/tap/athenacli
+  - brew audit dbcli/tap/athenacli --strict
+  - brew test dbcli/tap/athenacli
+  - athenacli --help
+matrix:
+  fast_finish: true

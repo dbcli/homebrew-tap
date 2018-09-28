@@ -1,3 +1,23 @@
-# dbcli/tap (deprecated)
+# dbcli Homebrew tap
 
-This tap is deprecated since `pgcli` is available in homebrew/core.
+[![Build Status](https://travis-ci.org/dbcli/homebrew-tap.svg?branch=master)](https://travis-ci.org/dbcli/homebrew-tap)
+
+dbcli macOS formulae for the Homebrew package manager.
+
+## Installation
+
+Run the following in your command-line:
+
+```sh
+$ brew tap dbcli/tap
+```
+
+### Install AthenaCLI
+
+```sh
+$ brew install athenacli
+```
+
+## License
+
+See [LICENSE](LICENSE).
