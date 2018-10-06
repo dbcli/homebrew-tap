@@ -3,19 +3,19 @@ class Athenacli < Formula
 
   desc "AthenaCLI is a command line client for AWS Athena service that can do auto-completion and syntax highlighting."
   homepage "https://athenacli.readthedocs.io"
-  url "https://files.pythonhosted.org/packages/6f/fd/2cced0aa8d6fb79b74527282d982059e0639a8648598dfbd5762ca010bc1/athenacli-0.1.1.tar.gz"
-  sha256 "108254117a1da78f0c80a9ae4dc1a10fbaeb1ee8a29d4ca2ef1024ff85a50742"
+  url "https://files.pythonhosted.org/packages/87/8f/a7c888353c6e1f5097f2d27a2cc020b117bc1eb86b2c7ea4dc95b3a859ca/athenacli-0.1.2.tar.gz"
+  sha256 "5e8f2b96617e5814165a78c7ae6644b9bec800df008ac6bfa3d154c40dd94b42"
 
   depends_on "python"
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/76/11/bc859a92a673d278733773e018d730d324908d4720ca8680d7ff82aea800/boto3-1.9.11.tar.gz"
-    sha256 "fc09c0f0fa6f344c941c4102d78cf2a04a13640d81a34f44b7df0b0ecbbdd36b"
+    url "https://files.pythonhosted.org/packages/ea/2f/4eb1ff66d1d9b0ad24185cda11d3643262ec39945be4e8b5de751d66b162/boto3-1.9.18.tar.gz"
+    sha256 "c667e1ba9677f37fe04afa3865840ade093529f353c5b4ba75222864f6478f74"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/81/e4/b3b47993c7ad8ca1eaa3079605ec6e9f4f7bdc8ae03261772346aac2a601/botocore-1.12.11.tar.gz"
-    sha256 "f9d79c6bdf5d7ada6a929e2c91af9a17b0c49bed9647819780482425a57a2778"
+    url "https://files.pythonhosted.org/packages/f0/b3/5b7cb91757aef1ad9241fb469c7dc25baa2ed6f491673d0fe11bc33886bb/botocore-1.12.18.tar.gz"
+    sha256 "d11fa0e12448105989f1f4eebf093e8cfba5f90860640c488f3211ff2a744df0"
   end
 
   resource "cli-helpers" do
@@ -54,8 +54,8 @@ class Athenacli < Formula
   end
 
   resource "PyAthena" do
-    url "https://files.pythonhosted.org/packages/cc/b2/ca2fcf1f4ecf9a347ccbf6c1a25ff71088bbc688a5c7c577b29162dbab40/PyAthena-1.2.2.tar.gz"
-    sha256 "fcb0819fc30baa01a37a228442499f377e95bdf89b01ca08355c7cffb71f8abf"
+    url "https://files.pythonhosted.org/packages/a3/06/bb8977c96a419e3a465227c2c1573645f6f431c105596e2ede03584ef583/PyAthena-1.4.2.tar.gz"
+    sha256 "2588f187b2652c7afc537f5c7d1dbd0fcf9f87ef1c953c2489c828ce301bb0a8"
   end
 
   resource "Pygments" do
