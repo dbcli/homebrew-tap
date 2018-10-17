@@ -3,19 +3,19 @@ class Athenacli < Formula
 
   desc "AthenaCLI is a command line client for AWS Athena service that can do auto-completion and syntax highlighting."
   homepage "https://athenacli.readthedocs.io"
-  url "https://files.pythonhosted.org/packages/87/8f/a7c888353c6e1f5097f2d27a2cc020b117bc1eb86b2c7ea4dc95b3a859ca/athenacli-0.1.2.tar.gz"
-  sha256 "5e8f2b96617e5814165a78c7ae6644b9bec800df008ac6bfa3d154c40dd94b42"
+  url "https://files.pythonhosted.org/packages/c5/b2/44b7207adc8f0cb5c3a641fb7398f5d87cee332f40be28a63463a397dec1/athenacli-0.1.3.tar.gz"
+  sha256 "8d818b10362f95787e3ffbc347d35432bc2ce0c2f11e6fafddfc70a1a8258219"
 
   depends_on "python"
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/ea/2f/4eb1ff66d1d9b0ad24185cda11d3643262ec39945be4e8b5de751d66b162/boto3-1.9.18.tar.gz"
-    sha256 "c667e1ba9677f37fe04afa3865840ade093529f353c5b4ba75222864f6478f74"
+    url "https://files.pythonhosted.org/packages/3e/9c/ef5515a8c62f6ab34a5b201fef79a0c28e31055b3be79fa9b42318fce900/boto3-1.9.25.tar.gz"
+    sha256 "941c46528cc2460423fd217068660a0814730c5d78a6a6673f61c5b4fa398a05"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/f0/b3/5b7cb91757aef1ad9241fb469c7dc25baa2ed6f491673d0fe11bc33886bb/botocore-1.12.18.tar.gz"
-    sha256 "d11fa0e12448105989f1f4eebf093e8cfba5f90860640c488f3211ff2a744df0"
+    url "https://files.pythonhosted.org/packages/3d/3d/778c9309a6654530f5beb85a378ce54cbb8d53c5a7c00cddd597cc32c5eb/botocore-1.12.25.tar.gz"
+    sha256 "d93513ad498ec44a17bcbc00de39036934f865417ff4222211be08855b4ed0cd"
   end
 
   resource "cli-helpers" do
