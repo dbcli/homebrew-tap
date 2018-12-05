@@ -3,8 +3,8 @@ class Litecli < Formula
 
   desc "Litecli is a command line client for Sqlite that can do auto-completion and syntax highlighting."
   homepage "https://github.com/dbcli/litecli"
-  url "https://files.pythonhosted.org/packages/93/7f/527bbcc82a90193e9ca07171863e86e2e6bd8271eb58fd80f912fb74092e/litecli-0.0.0.tar.gz"
-  sha256 "986eabd3ee5e4a962e21b724fc82f7268fff11109073daac828aacfaf7b27747"
+  url "https://files.pythonhosted.org/packages/df/c7/fb3ec2a1c4fb6558b3ef859d74d50ddac01e776c14a4b0199c5f83406202/litecli-0.0.2.tar.gz"
+  sha256 "6583a707df5677dc538e8421f6ee644b133d31eb1565b6383a64c6b5bb4bf488"
 
   depends_on "python"
 
