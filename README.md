@@ -18,6 +18,12 @@ $ brew tap dbcli/tap
 $ brew install athenacli
 ```
 
+### Install Litecli
+
+```sh
+$ brew install litecli
+```
+
 ## License
 
 See [LICENSE](LICENSE).
