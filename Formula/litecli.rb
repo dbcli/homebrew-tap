@@ -3,8 +3,8 @@ class Litecli < Formula
 
   desc "Litecli is a command line client for Sqlite that can do auto-completion and syntax highlighting."
   homepage "https://github.com/dbcli/litecli"
-  url "https://files.pythonhosted.org/packages/df/c7/fb3ec2a1c4fb6558b3ef859d74d50ddac01e776c14a4b0199c5f83406202/litecli-0.0.2.tar.gz"
-  sha256 "6583a707df5677dc538e8421f6ee644b133d31eb1565b6383a64c6b5bb4bf488"
+  url "https://files.pythonhosted.org/packages/85/c6/8bfbd48835687a4d7c8a69d13979f54f82435c2d722d03afd71dc47c7c85/litecli-1.0.0.tar.gz"
+  sha256 "05f3fba0ef523b1179e2953cf107cc52c4a223b73a995018232424804b36aa68"
 
   depends_on "python"
 
@@ -34,13 +34,13 @@ class Litecli < Formula
   end
 
   resource "Pygments" do
-    url "https://files.pythonhosted.org/packages/63/a2/91c31c4831853dedca2a08a0f94d788fc26a48f7281c99a303769ad2721b/Pygments-2.3.0.tar.gz"
-    sha256 "82666aac15622bd7bb685a4ee7f6625dd716da3ef7473620c192c0168aae64fc"
+    url "https://files.pythonhosted.org/packages/64/69/413708eaf3a64a6abb8972644e0f20891a55e621c6759e2c3f3891e05d63/Pygments-2.3.1.tar.gz"
+    sha256 "5ffada19f6203563680669ee7f53b64dabbeb100eb51b61996085e99c03b284a"
   end
 
   resource "six" do
-    url "https://files.pythonhosted.org/packages/16/d8/bc6316cf98419719bd59c91742194c111b6f2e85abac88e496adefaf7afe/six-1.11.0.tar.gz"
-    sha256 "70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9"
+    url "https://files.pythonhosted.org/packages/dd/bf/4138e7bfb757de47d1f4b6994648ec67a51efe58fa907c1e11e350cddfca/six-1.12.0.tar.gz"
+    sha256 "d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"
   end
 
   resource "sqlparse" do
